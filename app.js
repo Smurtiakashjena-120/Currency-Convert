@@ -51,7 +51,7 @@ btn.addEventListener("click", async(evt)=>{
   console.log(rate);
  let changeRate=msg.innerText;
  
- changeRate=`1 ${fromCurr.value}=${rate} ${toCurr.value}`;
+ changeRate=`${amtVal} ${fromCurr.value}=${(rate)*(amtVal)} ${toCurr.value}`;
  msg.innerText=changeRate;
 
 });
